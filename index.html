@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Winter Classic</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2a78c8">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js"));
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">WC</div>
+    <h1>Winter Classic</h1>
+  </header>
+  <main class="container">
+    <div class="section">
+      <span class="badge">Tap • Add to Home Screen</span>
+      <p style="margin:8px 0 0">Install on iPhone from Safari: Share ▸ Add to Home Screen.</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="/pages/white-net-best-ball.html">
+        <h3>White Net Best Ball</h3>
+        <div class="meta">12/11 • Morning</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/blue-net-best-ball.html">
+        <h3>Blue Net Best Ball</h3>
+        <div class="meta">12/11 • Morning</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/interflight-chapman.html">
+        <h3>InterFlight Chapman</h3>
+        <div class="meta">12/11 • Afternoon</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/white-net-alt-best-ball.html">
+        <h3>White Net Alternate Best Ball</h3>
+        <div class="meta">12/12 • Morning</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/blue-net-alt-best-ball.html">
+        <h3>Blue Net Alt Best Ball</h3>
+        <div class="meta">12/12 • Morning</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/interflight-scramble.html">
+        <h3>InterFlight Scramble</h3>
+        <div class="meta">12/12 • Afternoon</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/white-singles.html">
+        <h3>White Singles</h3>
+        <div class="meta">12/13 • Morning</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/blue-singles.html">
+        <h3>Blue Singles</h3>
+        <div class="meta">12/13 • Morning</div>
+        <span class="btn">Open</span>
+      </a>
+      <a class="card" href="/pages/interflight-singles.html">
+        <h3>InterFlight Singles</h3>
+        <div class="meta">12/13 • Afternoon</div>
+        <span class="btn">Open</span>
+      </a>
+    </div>
+  </main>
+  <div class="footer">Built for offline use • Winter Classic</div>
+</body>
+</html>
