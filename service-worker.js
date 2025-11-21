@@ -1,21 +1,21 @@
 
-const CACHE = "wc-v1";
+const CACHE = "wc-v2";
 const ASSETS = [
-  "/index.html",
-  "/manifest.webmanifest",
-  "/assets/styles.css",
-  "/assets/icon-192.png",
-  "/assets/icon-512.png",
-  "/assets/maskable-512.png",
-  "/pages/white-net-best-ball.html",
-  "/pages/blue-net-best-ball.html",
-  "/pages/interflight-chapman.html",
-  "/pages/white-net-alt-best-ball.html",
-  "/pages/blue-net-alt-best-ball.html",
-  "/pages/interflight-scramble.html",
-  "/pages/white-singles.html",
-  "/pages/blue-singles.html",
-  "/pages/interflight-singles.html"
+  "/winter_classic/index.html",
+  "/winter_classic/manifest.webmanifest",
+  "/winter_classic/assets/styles.css",
+  "/winter_classic/assets/icon-192.png",
+  "/winter_classic/assets/icon-512.png",
+  "/winter_classic/assets/maskable-512.png",
+  "/winter_classic/pages/white-net-best-ball.html",
+  "/winter_classic/pages/blue-net-best-ball.html",
+  "/winter_classic/pages/interflight-chapman.html",
+  "/winter_classic/pages/white-net-alt-best-ball.html",
+  "/winter_classic/pages/blue-net-alt-best-ball.html",
+  "/winter_classic/pages/interflight-scramble.html",
+  "/winter_classic/pages/white-singles.html",
+  "/winter_classic/pages/blue-singles.html",
+  "/winter_classic/pages/interflight-singles.html"
 ];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -35,7 +35,7 @@ self.addEventListener("fetch", e => {
         const copy = resp.clone();
         caches.open(CACHE).then(c => c.put(e.request, copy));
         return resp;
-      }).catch(() => caches.match("/index.html")))
+      }).catch(() => caches.match("/winter_classic/index.html")))
     );
   }
 });
