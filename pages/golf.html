@@ -1,26 +1,99 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Golf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Winter Classic</title>
+  <link rel="manifest" href="/winter_classic/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/winter_classic/assets/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2a78c8">
   <link rel="stylesheet" href="/winter_classic/assets/styles.css">
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("/winter_classic/service-worker.js"));
+    }
+  </script>
 </head>
 <body>
-  
-<header class="header" style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(135deg,#2a78c8,#1f5ea0);color:#fff;">
-  <img src="/winter_classic/assets/SVG/WWC_logo.svg" alt="WWC Logo" style="height:40px">
-  <h1 style="margin:0;font-size:18px;line-height:1">Winter Classic</h1>
-</header>
+  <header class="header">
+    <div class="logo">WC</div>
+    <h1>Winter Classic</h1>
+  </header>
+  <main class="container">
+    <div class="section">
+      <span class="badge">Tap • Add to Home Screen</span>
+      <p style="margin:8px 0 0">Install on iPhone from Safari: Share ▸ Add to Home Screen.</p>
+    </div>
 
-  <main class="container" style="max-width:900px;margin:0 auto;padding:16px;">
-    <table class="table">
-      <tr><th>Day</th><th>Event</th><th>Time</th></tr>
-      <tr><td>Day 1</td><td>White Net Best Ball</td><td>Morning</td></tr>
-      <tr><td>Day 1</td><td>InterFlight Chapman</td><td>Afternoon</td></tr>
-      <tr><td>Day 2</td><td>Alt Best Ball</td><td>Morning</td></tr>
-      <tr><td>Day 2</td><td>Scramble</td><td>Afternoon</td></tr>
-      <tr><td>Day 3</td><td>Singles</td><td>Morning/Afternoon</td></tr>
-    </table>
+    <div class="section">
+      <h2>Day 1 • December 11</h2>
+      <h3>Morning</h3>
+      <div class="grid">
+        <a class="card" href="/winter_classic/pages/white-net-best-ball.html">
+          <h3>White Net Best Ball</h3>
+          <span class="btn">Open</span>
+        </a>
+        <a class="card" href="/winter_classic/pages/blue-net-best-ball.html">
+          <h3>Blue Net Best Ball</h3>
+          <span class="btn">Open</span>
+        </a>
+      </div>
+      <h3>Afternoon</h3>
+      <div class="grid">
+        <a class="card" href="/winter_classic/pages/interflight-chapman.html">
+          <h3>InterFlight Chapman</h3>
+          <span class="btn">Open</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Day 2 • December 12</h2>
+      <h3>Morning</h3>
+      <div class="grid">
+        <a class="card" href="/winter_classic/pages/white-net-alt-best-ball.html">
+          <h3>White Net Alternate Best Ball</h3>
+          <span class="btn">Open</span>
+        </a>
+        <a class="card" href="/winter_classic/pages/blue-net-alt-best-ball.html">
+          <h3>Blue Net Alt Best Ball</h3>
+          <span class="btn">Open</span>
+        </a>
+      </div>
+      <h3>Afternoon</h3>
+      <div class="grid">
+        <a class="card" href="/winter_classic/pages/interflight-scramble.html">
+          <h3>InterFlight Scramble</h3>
+          <span class="btn">Open</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Day 3 • December 13</h2>
+      <h3>Morning</h3>
+      <div class="grid">
+        <a class="card" href="/winter_classic/pages/white-singles.html">
+          <h3>White Singles</h3>
+          <span class="btn">Open</span>
+        </a>
+        <a class="card" href="/winter_classic/pages/blue-singles.html">
+          <h3>Blue Singles</h3>
+          <span class="btn">Open</span>
+        </a>
+      </div>
+      <h3>Afternoon</h3>
+      <div class="grid">
+        <a class="card" href="/winter_classic/pages/interflight-singles.html">
+          <h3>InterFlight Singles</h3>
+          <span class="btn">Open</span>
+        </a>
+      </div>
+    </div>
   </main>
+  <div class="footer">Built for offline use • Winter Classic</div>
 </body>
 </html>
