@@ -1,3 +1,4 @@
+
 :root{
   --wc-blue:#2a78c8;
   --wc-blue-dark:#1f5ea0;
@@ -95,5 +96,102 @@ table tr:nth-child(odd) { background-color: #ffffff; }
 :root {
   font-size: 16px;
 }
-/* === Logo Fix === */
-header img { height: 40px; max-height: 40px; width: auto; flex-shrink: 0; }
+
+/* === Restored Original Theme and Layout Styles === */
+:root {
+  --wc-blue: #2a78c8;
+  --wc-blue-dark: #1f5ea0;
+  --wc-ice: #e6eef7;
+  --wc-gray: #f5f7fa;
+  --text: #0f172a;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+/* Container layout */
+.container {
+  padding: 16px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Section blocks */
+.section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Grid for cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* Card appearance */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(30, 64, 175, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(30, 64, 175, 0.12);
+}
+
+/* Headings inside cards */
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+/* Buttons inside cards */
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--wc-blue);
+  color: white;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: white;
+  color: var(--wc-blue);
+  border-color: var(--wc-blue);
+}
+
+/* Meta info text */
+.meta {
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+/* Badge style */
+.badge {
+  display: inline-block;
+  background: var(--wc-ice);
+  color: var(--wc-blue-dark);
+  border: 1px solid var(--wc-blue);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 16px;
+  color: #64748b;
+  text-align: center;
+}
