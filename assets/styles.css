@@ -1,4 +1,3 @@
-
 :root{
   --wc-blue:#2a78c8;
   --wc-blue-dark:#1f5ea0;
@@ -55,7 +54,11 @@ body, html {
 }
 
 /* Ensure flexible heights for containers and touch targets */
-* { box-sizing: border-box; }
+* {
+  height: auto !important;
+  min-height: 44px;
+  box-sizing: border-box;
+}
 
 /* Scalable, readable typography using clamp() */
 body {
@@ -92,6 +95,5 @@ table tr:nth-child(odd) { background-color: #ffffff; }
 :root {
   font-size: 16px;
 }
-
-/* Constrain header logo image */
-.header .logo, header img { height: 40px; max-height: 40px; width: auto; }
+/* === Logo Fix === */
+header img { height: 40px; max-height: 40px; width: auto; flex-shrink: 0; }
