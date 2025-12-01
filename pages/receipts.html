@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipts</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .green-circle {
+            width: 16px;
+            height: 16px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .red-x {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Receipts</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Player</th>
+            <th>Swag</th>
+            <th>Gambling</th>
+            <th>Golf</th>
+        </tr>
+    </thead>
+    <tbody id="receiptTable"></tbody>
+</table>
+
+<script>
+const data = [
+    { name: "Ricky Carraher", swag: "X", gambling: "", golf: "" },
+    { name: "Ron Carraher", swag: "X", gambling: "", golf: "" },
+    { name: "Bret Bologna", swag: "X", gambling: "", golf: "" },
+    { name: "Steve Lieberman", swag: "X", gambling: "X", golf: "" },
+    { name: "Dan Sherman", swag: "X", gambling: "", golf: "" },
+    { name: "Sam Carraher", swag: "X", gambling: "", golf: "" },
+    { name: "Dave Franklin", swag: "", gambling: "", golf: "" },
+    { name: "Van Huffine", swag: "X", gambling: "X", golf: "" },
+    { name: "Mike Barancyk", swag: "", gambling: "", golf: "" },
+    { name: "Dan Darelson", swag: "X", gambling: "X", golf: "" },
+    { name: "Alec Barancyk", swag: "", gambling: "", golf: "" },
+    { name: "Chris Martin", swag: "", gambling: "", golf: "" },
+    { name: "Ruben Hernandez", swag: "X", gambling: "", golf: "" },
+    { name: "Hunter Carmichael", swag: "", gambling: "", golf: "" },
+    { name: "Eric Newell", swag: "X", gambling: "", golf: "" },
+    { name: "Kevin Sullivan", swag: "X", gambling: "X", golf: "" },
+];
+
+function renderTable() {
+    const table = document.getElementById("receiptTable");
+
+    data.forEach(player => {
+        const row = document.createElement("tr");
+
+        // Swag icon logic
+        let swagCell = "";
+        if (player.swag === "X") {
+            swagCell = `<span class="green-circle"></span>`;
+        } else {
+            swagCell = `<span class="red-x">✗</span>`;
+        }
+
+        row.innerHTML = `
+            <td>${player.name}</td>
+            <td>${swagCell}</td>
+            <td>${player.gambling}</td>
+            <td>${player.golf}</td>
+        `;
+
+        table.appendChild(row);
+    });
+}
+
+renderTable();
+</script>
+
+</body>
+</html>
