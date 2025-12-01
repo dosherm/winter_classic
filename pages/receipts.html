@@ -89,6 +89,14 @@ function renderTable() {
             swagCell = `<span class="red-x">✗</span>`;
         }
 
+        // Gambling icon logic
+        let gamblingCell = "";
+        if (player.gambling === "X") {
+            gamblingCell = `<span class="green-circle"></span>`;
+        } else {
+            gamblingCell = `<span class="red-x"></span>`;
+        }
+
         row.innerHTML = `
             <td>${player.name}</td>
             <td>${swagCell}</td>
