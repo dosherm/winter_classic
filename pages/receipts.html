@@ -42,7 +42,8 @@
 <body>
 
 <header class="header" style="display:flex;align-items:center;gap:12px;padding:12px;background:linear-gradient(135deg,#2a78c8,#1f5ea0);color:#fff;">
-    <a href="/winter_classic/index.html" style="color:white;text-decoration:none;font-size:20px;">←</a>
+    <a href="/winter_classic/index.html" style="color:white;text-decoration:none;font-size:24px;">←</a>
+    <img src="/winter_classic/assets/SVG/WWC_logo.svg" alt="WWC Logo" style="height:32px;">
     <h1 style="margin:0;font-size:20px;">Receipts</h1>
 </header>
 
@@ -86,26 +87,20 @@ function renderTable() {
     data.forEach(player => {
         const row = document.createElement("tr");
 
-        // Swag icon logic
-        let swagCell = "";
-        if (player.swag === "X") {
-            swagCell = `<span class="green-circle"></span>`;
-        } else {
-            swagCell = `<span class="red-x">✗</span>`;
-        }
+        // Swag: green circle for X, red X for blank
+        let swagCell = player.swag === "X"
+            ? `<span class="green-circle"></span>`
+            : `<span class="red-x">✗</span>`;
 
-        // Gambling icon logic
-        let gamblingCell = "";
-        if (player.gambling === "X") {
-            gamblingCell = `<span class="green-circle"></span>`;
-        } else {
-            gamblingCell = `<span class="red-x"></span>`;
-        }
+        // Gambling: green circle for X, blank for nothing
+        let gamblingCell = player.gambling === "X"
+            ? `<span class="green-circle"></span>`
+            : ``;
 
         row.innerHTML = `
             <td>${player.name}</td>
             <td>${swagCell}</td>
-            <td>${player.gambling}</td>
+            <td>${gamblingCell}</td>
             <td>${player.golf}</td>
         `;
 
