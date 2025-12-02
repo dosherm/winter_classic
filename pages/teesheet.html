@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tee Sheets • Winter Classic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            background: linear-gradient(135deg, #2a78c8, #1f5ea0);
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .back {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .back:hover {
+            opacity: 0.8;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+        
+        h2 {
+            color: #2a78c8;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .filter-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .filter-container input {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid #2a78c8;
+            border-radius: 4px;
+        }
+        
+        .filter-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2a78c8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin: 10px 5px 0 5px;
+            cursor: pointer;
+        }
+        
+        .filter-container button:hover {
+            background-color: #1f5ea0;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        .table th {
+            background-color: #2a78c8;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        
+        .table tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .time {
+            font-weight: bold;
+            color: #2a78c8;
+            white-space: nowrap;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .highlight {
+            background-color: #fff9c4 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+            
+            .filter-container input {
+                width: 100%;
+            }
+            
+            .filter-container button {
+                width: calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="back" href="javascript:history.back()">‹ Back</a>
+        <img alt="WWC Logo" src="/winter_classic/assets/SVG/WWC_logo.svg" style="height:40px">
+        <h1>Tee Sheets</h1>
+    </header>
+    
+    <main class="container">
+        <div class="section">
+            <div class="filter-container">
+                <input type="text" id="playerFilter" placeholder="Enter player name to filter (e.g., Rickey Carraher)">
+                <button onclick="filterByPlayer()">Filter</button>
+                <button onclick="clearFilter()">Show All</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Day One - Morning Round</h2>
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Cart 1</th>
+                    <th>Cart 2</th>
+                </tr>
+                <tr>
+                    <td class="time">7:18 AM</td>
+                    <td>Rickey Carraher<br>Bret Bologna</td>
+                    <td>Dan Sherman<br>Van Huffine</td>
+                </tr>
+                <tr>
+                    <td class="time">7:27 AM</td>
+                    <td>Ron Carraher<br>Steve Lieberman</td>
+                    <td>Sam Carraher<br>David Franklin</td>
+                </tr>
+                <tr>
+                    <td class="time">7:36 AM</td>
+                    <td>Mike Barancyk<br>Alec Barancyk</td>
+                    <td>Kevin Sullivan<br>Bill Gomez</td>
+                </tr>
+                <tr>
+                    <td class="time">7:45 AM</td>
+                    <td>Dan Darlson<br>Chris Martin</td>
+                    <td>Hunter Carmichael<br>Eric Newell</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Day One - Afternoon Round</h2>
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Cart 1</th>
+                    <th>Cart 2</th>
+                </tr>
+                <tr>
+                    <td class="time">12:33 PM</td>
+                    <td>Steve Lieberman<br>Dan Sherman</td>
+                    <td>Ruben Hernandez<br>Hunter Carmichael</td>
+                </tr>
+                <tr>
+                    <td class="time">12:42 PM</td>
+                    <td>Ron Carraher<br>Van Huffine</td>
+                    <td>Eric Newell<br>Kevin Sullivan</td>
+                </tr>
+                <tr>
+                    <td class="time">12:51 PM</td>
+                    <td>Sam Carraher<br>Bret Bologna</td>
+                    <td>Chris Martin<br>Mike Barancyk</td>
+                </tr>
+                <tr>
+                    <td class="time">1:00 PM</td>
+                    <td>Rickey Carraher<br>David Franklin</td>
+                    <td>Dan Darlson<br>Alec Barancyk</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Day Two - Morning Round</h2>
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Cart 1</th>
+                    <th>Cart 2</th>
+                </tr>
+                <tr>
+                    <td class="time">7:18 AM</td>
+                    <td>Mike Barancyk<br>Chris Martin</td>
+                    <td>Hunter Carmichael<br>Kevin Sullivan</td>
+                </tr>
+                <tr>
+                    <td class="time">7:27 AM</td>
+                    <td>Dan Darlson<br>Alec Barancyk</td>
+                    <td>Ruben Hernandez<br>Eric Newell</td>
+                </tr>
+                <tr>
+                    <td class="time">7:36 AM</td>
+                    <td>Rickey Carraher<br>Steve Lieberman</td>
+                    <td>Sam Carraher<br>Van Huffine</td>
+                </tr>
+                <tr>
+                    <td class="time">7:45 AM</td>
+                    <td>Ron Carraher<br>Bret Bologna</td>
+                    <td>Dan Sherman<br>Andrew McGrath</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Day Two - Afternoon Round</h2>
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Cart 1</th>
+                    <th>Cart 2</th>
+                </tr>
+                <tr>
+                    <td class="time">12:33 PM</td>
+                    <td>Steve Lieberman<br>Van Huffine</td>
+                    <td>Kevin Sullivan<br>Dan Darlson</td>
+                </tr>
+                <tr>
+                    <td class="time">12:42 PM</td>
+                    <td>Bret Bologna<br>Rickey Carraher</td>
+                    <td>Chris Martin<br>Ruben Hernandez</td>
+                </tr>
+                <tr>
+                    <td class="time">12:51 PM</td>
+                    <td>Dan Sherman<br>Sam Carraher</td>
+                    <td>Hunter Carmichael<br>Alec Barancyk</td>
+                </tr>
+                <tr>
+                    <td class="time">1:00 PM</td>
+                    <td>Andrew McGrath<br>Ron Carraher</td>
+                    <td>Eric Newell<br>Mike Barancyk</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Day Three - Morning Round</h2>
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Cart 1</th>
+                    <th>Cart 2</th>
+                </tr>
+                <tr>
+                    <td class="time">7:18 AM</td>
+                    <td>Rickey Carraher<br>Bret Bologna</td>
+                    <td>Dan Sherman<br>Van Huffine</td>
+                </tr>
+                <tr>
+                    <td class="time">7:27 AM</td>
+                    <td>Ron Carraher<br>Steve Lieberman</td>
+                    <td>Sam Carraher<br>David Franklin</td>
+                </tr>
+                <tr>
+                    <td class="time">7:36 AM</td>
+                    <td>Chris Martin<br>Alec Barancyk</td>
+                    <td>Kevin Sullivan<br>Eric Newell</td>
+                </tr>
+                <tr>
+                    <td class="time">7:45 AM</td>
+                    <td>Mike Barancyk<br>Dan Darlson</td>
+                    <td>Ruben Hernandez<br>Hunter Carmichael</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Day Three - Afternoon Round</h2>
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Cart 1</th>
+                    <th>Cart 2</th>
+                </tr>
+                <tr>
+                    <td class="time">12:33 PM</td>
+                    <td>TBD<br>Bret Bologna</td>
+                    <td>Kevin Sullivan<br>Dan Darlson</td>
+                </tr>
+                <tr>
+                    <td class="time">12:42 PM</td>
+                    <td>Van Huffine<br>Sam Carraher</td>
+                    <td>Alec Barancyk<br>Chris Martin</td>
+                </tr>
+                <tr>
+                    <td class="time">12:51 PM</td>
+                    <td>Steve Lieberman<br>Ron Carraher</td>
+                    <td>Eric Newell<br>H. Carmichael</td>
+                </tr>
+                <tr>
+                    <td class="time">1:00 PM</td>
+                    <td>Rickey Carraher<br>Dan Sherman</td>
+                    <td>R. Hernandez<br>Mike Barancyk</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+    <script>
+        function filterByPlayer() {
+            const filterValue = document.getElementById('playerFilter').value.trim().toLowerCase();
+            
+            if (!filterValue) {
+                alert('Please enter a player name');
+                return;
+            }
+            
+            // Get all sections with tables
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                const table = section.querySelector('table');
+                if (!table) return;
+                
+                const rows = table.querySelectorAll('tr');
+                let hasVisibleRows = false;
+                
+                rows.forEach((row, index) => {
+                    // Skip header row
+                    if (index === 0) return;
+                    
+                    const rowText = row.textContent.toLowerCase();
+                    
+                    if (rowText.includes(filterValue)) {
+                        row.classList.remove('hidden');
+                        row.classList.add('highlight');
+                        hasVisibleRows = true;
+                    } else {
+                        row.classList.add('hidden');
+                        row.classList.remove('highlight');
+                    }
+                });
+                
+                // Hide the entire section if no rows match
+                if (!hasVisibleRows && table) {
+                    section.classList.add('hidden');
+                } else {
+                    section.classList.remove('hidden');
+                }
+            });
+        }
+        
+        function clearFilter() {
+            document.getElementById('playerFilter').value = '';
+            
+            // Show all sections and rows
+            document.querySelectorAll('.hidden').forEach(element => {
+                element.classList.remove('hidden');
+            });
+            
+            // Remove highlights
+            document.querySelectorAll('.highlight').forEach(element => {
+                element.classList.remove('highlight');
+            });
+        }
+        
+        // Allow Enter key to trigger filter
+        document.getElementById('playerFilter').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                filterByPlayer();
+            }
+        });
+    </script>
+</body>
+</html>
