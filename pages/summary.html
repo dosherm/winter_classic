@@ -3,20 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <title>Winter Classic – Player Summary</title>
+
+<!-- Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Table sorting library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+
 <style>
-    body { background-color: #f7f7f7; padding: 20px; }
+    body { background-color: #f2f6fc; }
+
+    /* Header bar (matches Winter Classic style) */
+    .wc-header {
+        background-color: #003366;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .wc-header img {
+        height: 50px;
+    }
+    .back-button {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .back-button:hover {
+        color: #cce0ff;
+    }
+
+    h1 {
+        margin: 25px 0;
+        text-align: center;
+        font-weight: 600;
+        color: #003366;
+    }
+
     table { background: white; }
     .modal-content { border-radius: 10px; }
-    .player-link { cursor: pointer; color: #0d6efd; font-weight: 600; }
+
+    .player-link {
+        cursor: pointer;
+        color: #0d6efd;
+        font-weight: 600;
+    }
     .player-link:hover { text-decoration: underline; }
 </style>
 </head>
 
 <body>
+
+<!-- Winter Classic Header -->
+<div class="wc-header">
+    <a href="../golf.html" class="back-button">&larr; Back</a>
+    <img src="../assets/logo.png" alt="Winter Classic Logo">
+</div>
+
 <h1>Player Summary</h1>
 
+<div class="container">
 <div class="table-responsive">
 <table id="summaryTable" class="table table-striped table-bordered">
     <thead>
@@ -29,7 +77,9 @@
     <tbody></tbody>
 </table>
 </div>
+</div>
 
+<!-- Modal -->
 <div class="modal fade" id="playerModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -42,7 +92,6 @@
           <thead>
             <tr>
               <th>Page</th>
-              <th>Match #</th>
               <th>Result</th>
               <th>Winnings</th>
             </tr>
@@ -54,6 +103,7 @@
   </div>
 </div>
 
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
@@ -62,7 +112,6 @@ let playerData = {};
 
 function loadCSV() {
     Papa.parse("../assets/player_match_results.csv", {
-
         download: true,
         header: true,
         complete: function(results) {
@@ -79,24 +128,29 @@ function processData(data) {
         if (!player) return;
 
         if (!playerData[player]) {
-            playerData[player] = { matches: 0, totalMoney: 0, details: [] };
+            playerData[player] = {
+                matches: 0,
+                totalMoney: 0,
+                details: []
+            };
         }
 
         playerData[player].matches++;
 
+        // Determine result
+        let result = "N/A";
+        if (row.Winner === "X") result = "Win";
+        if (row.Loser === "X") result = "Loss";
+
+        // Only add winnings when this player is marked Winner = "X"
         let money = 0;
-        if (row.Winnings && row.Winnings.trim().startsWith("$")) {
+        if (row.Winner === "X" && row.Winnings && row.Winnings.trim().startsWith("$")) {
             money = parseFloat(row.Winnings.replace("$", "").trim());
             playerData[player].totalMoney += money;
         }
 
-        let result = "Played";
-        if (row.Winner && row.Winner === player) result = "Winner";
-        if (row.Loser && row.Loser === player) result = "Loser";
-
         playerData[player].details.push({
             page: row.page,
-            match: row.match,
             result: result,
             winnings: row.Winnings
         });
@@ -135,7 +189,6 @@ function openModal(player) {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td>${d.page}</td>
-            <td>${d.match}</td>
             <td>${d.result}</td>
             <td>${d.winnings}</td>
         `;
@@ -148,5 +201,6 @@ function openModal(player) {
 
 loadCSV();
 </script>
+
 </body>
 </html>
