@@ -1,0 +1,129 @@
+page,match,player,Winner,Loser,Winnings
+White Net Best Ball,1,Ricky Carraher,x,,$40 
+White Net Best Ball,1,Bret Bologna,x,,$40 
+White Net Best Ball,1,Dan Sherman,x,,$40 
+White Net Best Ball,1,Van Huffine,x,,$40 
+White Net Best Ball,2,Ron Carraher,,x,$40 
+White Net Best Ball,2,Steve Lieberman,,x,$40 
+White Net Best Ball,2,Sam Carraher,,x,$40 
+White Net Best Ball,2,Dave Franklin,,x,$40 
+Blue Net Best Ball,1,Mike Barancyk,x,,$40 
+Blue Net Best Ball,1,Alec Barancyk,x,,$40 
+Blue Net Best Ball,1,Ruben Hernandez,x,,$40 
+Blue Net Best Ball,1,Kevin Sullivan,x,,$40 
+Blue Net Best Ball,2,Dan Darlson,,x,$40 
+Blue Net Best Ball,2,Chris Martin,,x,$40 
+Blue Net Best Ball,2,Hunter Carmichael,,x,$40 
+Blue Net Best Ball,2,Eric Newell,,x,$40 
+InterFlight Chapman,1,Van Huffine,x,,$40 
+InterFlight Chapman,1,Ron Carraher,x,,$40 
+InterFlight Chapman,1,Eric Newell,,x,$40 
+InterFlight Chapman,1,Kevin Sullivan,,x,$40 
+InterFlight Chapman,2,Ricky Carraher,,x,$40 
+InterFlight Chapman,2,Dave Franklin,,x,$40 
+InterFlight Chapman,2,Dan Darlson,x,,$40 
+InterFlight Chapman,2,Alec Barancyk,x,,$40 
+InterFlight Chapman,3,Steve Lieberman,x,,$40 
+InterFlight Chapman,3,Dan Sherman,x,,$40 
+InterFlight Chapman,3,Ruben Hernandez,,x,$40 
+InterFlight Chapman,3,Hunter Carmichael,,x,$40 
+InterFlight Chapman,4,Sam Carraher,,x,$40 
+InterFlight Chapman,4,Bret Bologna,,x,$40 
+InterFlight Chapman,4,Chris Martin,x,,$40 
+InterFlight Chapman,4,Mike Barancyk,x,,$40 
+White Net Alternate Best Ball,1,Ricky Carraher,x,,$40 
+White Net Alternate Best Ball,1,Steve Lieberman,x,,$40 
+White Net Alternate Best Ball,1,Sam Carraher,,x,$40 
+White Net Alternate Best Ball,1,Van Huffine,,x,$40 
+White Net Alternate Best Ball,2,Ron Carraher,x,,$40 
+White Net Alternate Best Ball,2,Bret Bologna,x,,$40 
+White Net Alternate Best Ball,2,Dan Sherman,,x,$40 
+White Net Alternate Best Ball,2,Dave Franklin,,x,$40 
+Blue Net Alt Best Ball,1,Mike Barancyk,,x,$40 
+Blue Net Alt Best Ball,1,Chris Martin,,x,$40 
+Blue Net Alt Best Ball,1,Hunter Carmichael,x,,$40 
+Blue Net Alt Best Ball,1,Kevin Sullivan,x,,$40 
+Blue Net Alt Best Ball,2,Dan Darlson,,x,$40 
+Blue Net Alt Best Ball,2,Alec Barancyk,,x,$40 
+Blue Net Alt Best Ball,2,Ruben Hernandez,x,,$40 
+Blue Net Alt Best Ball,2,Eric Newell,x,,$40 
+InterFlight Scramble,1,Dan Sherman,x,,$40 
+InterFlight Scramble,1,Sam Carraher,x,,$40 
+InterFlight Scramble,1,Hunter Carmichael,,x,$40 
+InterFlight Scramble,1,Alec Barancyk,,x,$40 
+InterFlight Scramble,2,Dave Franklin,,x,$40 
+InterFlight Scramble,2,Van Huffine,,x,$40 
+InterFlight Scramble,2,Kevin Sullivan,x,,$40 
+InterFlight Scramble,2,Dan Darlson,x,,$40 
+InterFlight Scramble,3,Bret Bologna,x,,$40 
+InterFlight Scramble,3,Ricky Carraher,x,,$40 
+InterFlight Scramble,3,Chris Martin,,x,$40 
+InterFlight Scramble,3,Ruben Hernandez,,x,$40 
+InterFlight Scramble,4,Ron Carraher,,x,$40 
+InterFlight Scramble,4,Steve Lieberman,,x,$40 
+InterFlight Scramble,4,Eric Newell,x,,$40 
+InterFlight Scramble,4,Mike Barancyk,x,,$40 
+White Singles,1,Ricky Carraher,x,,$40 
+White Singles,2,Bret Bologna,x,,$40 
+White Singles,3,Ron Carraher,x,,$40 
+White Singles,4,Steve Lieberman,x,,$40 
+Blue Singles,1,Mike Barancyk,,x,$40 
+Blue Singles,2,Dan Darlson,,x,$40 
+Blue Singles,3,Chris Martin,,x,$40 
+Blue Singles,4,Alec Barancyk,,x,$40 
+Interflight Singles,1,Dave Franklin,,x,$40 
+Interflight Singles,2,Bret Bologna,,x,$40 
+Interflight Singles,3,Van Huffine,,x,$40 
+Interflight Singles,4,Sam Carraher,,x,$40 
+Interflight Singles,5,Steve Lieberman,,x,$40 
+Interflight Singles,6,Ron Carraher,,x,$40 
+Interflight Singles,7,Ricky Carraher,x,,$40 
+Interflight Singles,8,Dan Sherman,,x,$40 
+White Singles,1,Dan Sherman,,x,$40 
+White Singles,2,Van Huffine,,x,$40 
+White Singles,3,Sam Carraher,,x,$40 
+White Singles,4,Dave Franklin,,x,$40 
+Blue Singles,1,Ruben Hernandez,x,,$40 
+Blue Singles,2,Hunter Carmichael,x,,$40 
+Blue Singles,3,Kevin Sullivan,x,,$40 
+Blue Singles,4,Eric Newell,x,,$40 
+Interflight Singles,1,Kevin Sullivan,x,,$40 
+Interflight Singles,2,Dan Darlson,x,,$40 
+Interflight Singles,3,Alec Barancyk,x,,$40 
+Interflight Singles,4,Chris Martin,x,,$40 
+Interflight Singles,5,Eric Newell,x,,$40 
+Interflight Singles,6,Hunter Carmichael,x,,$40 
+Interflight Singles,7,Ruben Hernandez,x,,$40 
+Interflight Singles,8,Mike Barancyk,x,,$40 
+Team Sherman,,Dan Sherman,x,,$100 
+Team Sherman,,Van Huffine,x,,$100 
+Team Sherman,,Sam Carraher,x,,$100 
+Team Sherman,,Dave Franklin,x,,$100 
+Team Ricky,,Steve Lieberman,,x,$100 
+Team Ricky,,Ron Carraher,,x,$100 
+Team Ricky,,Ricky Carraher,,x,$100 
+Team Ricky,,Bret Bologna,,x,$100 
+Team Mike,,Dan Darlson,,x,$100 
+Team Mike,,Chris Martin,,x,$100 
+Team Mike,,Alec Barancyk,,x,$100 
+Team Mike,,Mike Barancyk,,x,$100 
+Team Ruben,,Ruben Hernandez,x,,$100 
+Team Ruben,,Hunter Carmichael,x,,$100 
+Team Ruben,,Eric Newell,x,,$100 
+Team Ruben,,Kevin Sullivan,x,,$100 
+InterFlight,,Dan Sherman,x,,$100 
+InterFlight,,Van Huffine,x,,$100 
+InterFlight,,Sam Carraher,x,,$100 
+InterFlight,,Dave Franklin,x,,$100 
+InterFlight,,Steve Lieberman,x,,$100 
+InterFlight,,Ron Carraher,x,,$100 
+InterFlight,,Ricky Carraher,x,,$100 
+InterFlight,,Bret Bologna,x,,$100 
+InterFlight,,Dan Darlson,,x,$100 
+InterFlight,,Chris Martin,,x,$100 
+InterFlight,,Alec Barancyk,,x,$100 
+InterFlight,,Mike Barancyk,,x,$100 
+InterFlight,,Ruben Hernandez,,x,$100 
+InterFlight,,Hunter Carmichael,,x,$100 
+InterFlight,,Eric Newell,,x,$100 
+InterFlight,,Kevin Sullivan,,x,$100 
