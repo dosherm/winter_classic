@@ -1,5 +1,5 @@
 page,match,player,Winner,Loser,Winnings
-White Net Best Ball,1,Ricky Carraher,x,,$40 
+White Net Best Ball,1,Ricky Carraher,X,,$40 
 White Net Best Ball,1,Bret Bologna,x,,$40 
 White Net Best Ball,1,Dan Sherman,x,,$40 
 White Net Best Ball,1,Van Huffine,x,,$40 
@@ -126,4 +126,5 @@ InterFlight,,Mike Barancyk,,x,$100
 InterFlight,,Ruben Hernandez,,x,$100 
 InterFlight,,Hunter Carmichael,,x,$100 
 InterFlight,,Eric Newell,,x,$100 
+
 InterFlight,,Kevin Sullivan,,x,$100 
