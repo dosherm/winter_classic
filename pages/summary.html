@@ -137,17 +137,21 @@ function processData(data) {
 
         playerData[player].matches++;
 
-        // Determine result
+        // Determine win/loss flags (case-insensitive)
+        let winFlag  = (row.Winner || "").trim().toUpperCase() === "X";
+        let lossFlag = (row.Loser  || "").trim().toUpperCase() === "X";
+        
         let result = "N/A";
-        if (row.Winner === "X") result = "Win";
-        if (row.Loser === "X") result = "Loss";
-
-        // Only add winnings when this player is marked Winner = "X"
+        if (winFlag) result = "Win";
+        else if (lossFlag) result = "Loss";
+        
+        // Only add winnings for WINNERS
         let money = 0;
-        if (row.Winner === "X" && row.Winnings && row.Winnings.trim().startsWith("$")) {
+        if (winFlag && row.Winnings && row.Winnings.trim().startsWith("$")) {
             money = parseFloat(row.Winnings.replace("$", "").trim());
             playerData[player].totalMoney += money;
         }
+
 
         playerData[player].details.push({
             page: row.page,
