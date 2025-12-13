@@ -71,14 +71,14 @@ Blue Singles,1,Mike Barancyk,x,,$40
 Blue Singles,2,Dan Darlson,,x,$0 
 Blue Singles,3,Chris Martin,,x,$0 
 Blue Singles,4,Alec Barancyk,x,,$40 
-Interflight Singles,1,Dave Franklin,,,$0 
-Interflight Singles,2,Bret Bologna,,,$0 
-Interflight Singles,3,Van Huffine,,,$0 
-Interflight Singles,4,Sam Carraher,,,$0 
-Interflight Singles,5,Steve Lieberman,,,$0 
-Interflight Singles,6,Ron Carraher,,,$0 
-Interflight Singles,7,Ricky Carraher,,,$0 
-Interflight Singles,8,Dan Sherman,,,$0 
+Interflight Singles,1,Dave Franklin,,x,$0 
+Interflight Singles,2,Bret Bologna,x,,$40 
+Interflight Singles,3,Van Huffine,x,,$40 
+Interflight Singles,4,Sam Carraher,x,,$40 
+Interflight Singles,5,Steve Lieberman,x,,$40 
+Interflight Singles,6,Ron Carraher,x,x,$20 
+Interflight Singles,7,Ricky Carraher,x,,$40 
+Interflight Singles,8,Dan Sherman,x,,$0 
 White Singles,1,Dan Sherman,,x,$0 
 White Singles,2,Van Huffine,,x,$0 
 White Singles,3,Sam Carraher,x,,$40 
@@ -87,14 +87,14 @@ Blue Singles,1,Ruben Hernandez,,x,$0
 Blue Singles,2,Hunter Carmichael,x,,$40 
 Blue Singles,3,Kevin Sullivan,x,,$40 
 Blue Singles,4,Eric Newell,,x,$0 
-Interflight Singles,1,Kevin Sullivan,,,$0 
-Interflight Singles,2,Dan Darlson,,,$0 
-Interflight Singles,3,Alec Barancyk,,,$0 
-Interflight Singles,4,Chris Martin,,,$0 
-Interflight Singles,5,Eric Newell,,,$0 
-Interflight Singles,6,Hunter Carmichael,,,$0 
-Interflight Singles,7,Ruben Hernandez,,,$0 
-Interflight Singles,8,Mike Barancyk,,,$0 
+Interflight Singles,1,Kevin Sullivan,,x,$0 
+Interflight Singles,2,Dan Darlson,,x,$0 
+Interflight Singles,3,Alec Barancyk,,x,$0 
+Interflight Singles,4,Chris Martin,,x,$0 
+Interflight Singles,5,Eric Newell,x,,$40 
+Interflight Singles,6,Hunter Carmichael,x,x,$20 
+Interflight Singles,7,Ruben Hernandez,,x,$0 
+Interflight Singles,8,Mike Barancyk,,x,$0 
 Team Sherman,,Dan Sherman,x,,$100 
 Team Sherman,,Van Huffine,x,,$100 
 Team Sherman,,Sam Carraher,x,,$100 
@@ -111,22 +111,22 @@ Team Ruben,,Ruben Hernandez,x,,$100
 Team Ruben,,Hunter Carmichael,x,,$100 
 Team Ruben,,Eric Newell,x,,$100 
 Team Ruben,,Kevin Sullivan,x,,$100 
-InterFlight,,Dan Sherman,,,$0 
-InterFlight,,Van Huffine,,,$0 
-InterFlight,,Sam Carraher,,,$0 
-InterFlight,,Dave Franklin,,,$0 
-InterFlight,,Steve Lieberman,,,$0 
-InterFlight,,Ron Carraher,,,$0 
-InterFlight,,Ricky Carraher,,,$0 
-InterFlight,,Bret Bologna,,,$0 
-InterFlight,,Dan Darlson,,,$0 
-InterFlight,,Chris Martin,,,$0 
-InterFlight,,Alec Barancyk,,,$0 
-InterFlight,,Mike Barancyk,,,$0 
-InterFlight,,Ruben Hernandez,,,$0 
-InterFlight,,Hunter Carmichael,,,$0 
-InterFlight,,Eric Newell,,,$0 
-InterFlight,,Kevin Sullivan,,,$0 
+InterFlight,,Dan Sherman,x,,$100 
+InterFlight,,Van Huffine,x,,$100 
+InterFlight,,Sam Carraher,x,,$100 
+InterFlight,,Dave Franklin,x,,$100 
+InterFlight,,Steve Lieberman,x,,$100 
+InterFlight,,Ron Carraher,x,,$100 
+InterFlight,,Ricky Carraher,x,,$100 
+InterFlight,,Bret Bologna,x,,$100 
+InterFlight,,Dan Darlson,,x,$0 
+InterFlight,,Chris Martin,,x,$0 
+InterFlight,,Alec Barancyk,,x,$0 
+InterFlight,,Mike Barancyk,,x,$0 
+InterFlight,,Ruben Hernandez,,x,$0 
+InterFlight,,Hunter Carmichael,,x,$0 
+InterFlight,,Eric Newell,,x,$0 
+InterFlight,,Kevin Sullivan,,x,$0 
 White Skins Day 1,,Dan Sherman,x,,$25 
 White Skins Day 1,,Van Huffine,x,,$25 
 White Skins Day 1,,Sam Carraher,x,,$15.00 
@@ -174,3 +174,6 @@ Blue Skins Day 3,,Kevin Sullivan,x,,$5
 Blue Skins Day 3,,Alec Barancyk,x,,$5 
 Blue Skins Day 3,,Chris Martin,x,,$5 
 Blue Skina Day 3,,Hunter Carmichael,x,,$5 
+Interflight Skins Day 3,,Hunter Carmichael,,,$80 
+Interflight Skins Day 3,,Ron Carraher,,,$35 
+Interflight Skins Day 3,,Ruben Hernandez,,,$35 
