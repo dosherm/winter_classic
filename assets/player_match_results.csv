@@ -1,68 +1,68 @@
 page,match,player,Winner,Loser,Winnings
-White Net Best Ball,1,Ricky Carraher,,,$40 
-White Net Best Ball,1,Bret Bologna,,,$40 
-White Net Best Ball,1,Dan Sherman,,,$40 
-White Net Best Ball,1,Van Huffine,,,$40 
-White Net Best Ball,2,Ron Carraher,,,$40 
-White Net Best Ball,2,Steve Lieberman,,,$40 
-White Net Best Ball,2,Sam Carraher,,,$40 
-White Net Best Ball,2,Dave Franklin,,,$40 
-Blue Net Best Ball,1,Mike Barancyk,,,$40 
-Blue Net Best Ball,1,Alec Barancyk,,,$40 
-Blue Net Best Ball,1,Ruben Hernandez,,,$40 
-Blue Net Best Ball,1,Kevin Sullivan,,,$40 
-Blue Net Best Ball,2,Dan Darlson,,,$40 
-Blue Net Best Ball,2,Chris Martin,,,$40 
-Blue Net Best Ball,2,Hunter Carmichael,,,$40 
-Blue Net Best Ball,2,Eric Newell,,,$40 
-InterFlight Chapman,1,Van Huffine,,,$40 
-InterFlight Chapman,1,Ron Carraher,,,$40 
-InterFlight Chapman,1,Eric Newell,,,$40 
-InterFlight Chapman,1,Kevin Sullivan,,,$40 
-InterFlight Chapman,2,Ricky Carraher,,,$40 
-InterFlight Chapman,2,Dave Franklin,,,$40 
-InterFlight Chapman,2,Dan Darlson,,,$40 
-InterFlight Chapman,2,Alec Barancyk,,,$40 
-InterFlight Chapman,3,Steve Lieberman,,,$40 
-InterFlight Chapman,3,Dan Sherman,,,$40 
-InterFlight Chapman,3,Ruben Hernandez,,,$40 
-InterFlight Chapman,3,Hunter Carmichael,,,$40 
-InterFlight Chapman,4,Sam Carraher,,,$40 
-InterFlight Chapman,4,Bret Bologna,,,$40 
-InterFlight Chapman,4,Chris Martin,,,$40 
-InterFlight Chapman,4,Mike Barancyk,,,$40 
-White Net Alternate Best Ball,1,Ricky Carraher,,,$40 
-White Net Alternate Best Ball,1,Steve Lieberman,,,$40 
-White Net Alternate Best Ball,1,Sam Carraher,,,$40 
-White Net Alternate Best Ball,1,Van Huffine,,,$40 
-White Net Alternate Best Ball,2,Ron Carraher,,,$40 
-White Net Alternate Best Ball,2,Bret Bologna,,,$40 
-White Net Alternate Best Ball,2,Dan Sherman,,,$40 
-White Net Alternate Best Ball,2,Dave Franklin,,,$40 
-Blue Net Alt Best Ball,1,Mike Barancyk,,,$40 
-Blue Net Alt Best Ball,1,Chris Martin,,,$40 
-Blue Net Alt Best Ball,1,Hunter Carmichael,,,$40 
-Blue Net Alt Best Ball,1,Kevin Sullivan,,,$40 
-Blue Net Alt Best Ball,2,Dan Darlson,,,$40 
-Blue Net Alt Best Ball,2,Alec Barancyk,,,$40 
-Blue Net Alt Best Ball,2,Ruben Hernandez,,,$40 
-Blue Net Alt Best Ball,2,Eric Newell,,,$40 
-InterFlight Scramble,1,Dan Sherman,,,$40 
-InterFlight Scramble,1,Sam Carraher,,,$40 
-InterFlight Scramble,1,Hunter Carmichael,,,$40 
-InterFlight Scramble,1,Alec Barancyk,,,$40 
-InterFlight Scramble,2,Dave Franklin,,,$40 
-InterFlight Scramble,2,Van Huffine,,,$40 
-InterFlight Scramble,2,Kevin Sullivan,,,$40 
-InterFlight Scramble,2,Dan Darlson,,,$40 
-InterFlight Scramble,3,Bret Bologna,,,$40 
-InterFlight Scramble,3,Ricky Carraher,,,$40 
-InterFlight Scramble,3,Chris Martin,,,$40 
-InterFlight Scramble,3,Ruben Hernandez,,,$40 
-InterFlight Scramble,4,Ron Carraher,,,$40 
-InterFlight Scramble,4,Steve Lieberman,,,$40 
-InterFlight Scramble,4,Eric Newell,,,$40 
-InterFlight Scramble,4,Mike Barancyk,,,$40 
+White Net Best Ball,1,Ricky Carraher,,X,$0 
+White Net Best Ball,1,Bret Bologna,,X,$0 
+White Net Best Ball,1,Dan Sherman,X,,$40 
+White Net Best Ball,1,Van Huffine,X,,$40 
+White Net Best Ball,2,Ron Carraher,,X,$0 
+White Net Best Ball,2,Steve Lieberman,,X,$0 
+White Net Best Ball,2,Sam Carraher,X,,$40 
+White Net Best Ball,2,Dave Franklin,X,,$40 
+Blue Net Best Ball,1,Mike Barancyk,X,X,$20 
+Blue Net Best Ball,1,Alec Barancyk,X,X,$20 
+Blue Net Best Ball,1,Ruben Hernandez,X,X,$20 
+Blue Net Best Ball,1,Kevin Sullivan,X,X,$20 
+Blue Net Best Ball,2,Dan Darlson,X,,$40 
+Blue Net Best Ball,2,Chris Martin,X,,$40 
+Blue Net Best Ball,2,Hunter Carmichael,,X,$40 
+Blue Net Best Ball,2,Eric Newell,,X,$40 
+InterFlight Chapman,1,Van Huffine,,x,$0 
+InterFlight Chapman,1,Ron Carraher,,x,$0 
+InterFlight Chapman,1,Eric Newell,x,,$40 
+InterFlight Chapman,1,Kevin Sullivan,x,,$40 
+InterFlight Chapman,2,Ricky Carraher,,x,$0 
+InterFlight Chapman,2,Dave Franklin,,x,$0 
+InterFlight Chapman,2,Dan Darlson,x,,$40 
+InterFlight Chapman,2,Alec Barancyk,x,,$40 
+InterFlight Chapman,3,Steve Lieberman,x,,$40 
+InterFlight Chapman,3,Dan Sherman,x,,$40 
+InterFlight Chapman,3,Ruben Hernandez,,x,$0 
+InterFlight Chapman,3,Hunter Carmichael,,x,$0 
+InterFlight Chapman,4,Sam Carraher,x,,$40 
+InterFlight Chapman,4,Bret Bologna,x,,$40 
+InterFlight Chapman,4,Chris Martin,,x,$0 
+InterFlight Chapman,4,Mike Barancyk,,x,$0 
+White Net Alternate Best Ball,1,Ricky Carraher,,x,$40 
+White Net Alternate Best Ball,1,Steve Lieberman,,x,$40 
+White Net Alternate Best Ball,1,Sam Carraher,x,,$40 
+White Net Alternate Best Ball,1,Van Huffine,x,,$40 
+White Net Alternate Best Ball,2,Ron Carraher,x,x,$20 
+White Net Alternate Best Ball,2,Bret Bologna,x,x,$20 
+White Net Alternate Best Ball,2,Dan Sherman,x,x,$20 
+White Net Alternate Best Ball,2,Dave Franklin,x,x,$20 
+Blue Net Alt Best Ball,1,Mike Barancyk,,x,$0 
+Blue Net Alt Best Ball,1,Chris Martin,,x,$0 
+Blue Net Alt Best Ball,1,Hunter Carmichael,x,,$40 
+Blue Net Alt Best Ball,1,Kevin Sullivan,x,,$40 
+Blue Net Alt Best Ball,2,Dan Darlson,x,,$40 
+Blue Net Alt Best Ball,2,Alec Barancyk,x,,$40 
+Blue Net Alt Best Ball,2,Ruben Hernandez,,x,$0 
+Blue Net Alt Best Ball,2,Eric Newell,,x,$0 
+InterFlight Scramble,1,Dan Sherman,,x,$0 
+InterFlight Scramble,1,Sam Carraher,,x,$0 
+InterFlight Scramble,1,Hunter Carmichael,x,,$40 
+InterFlight Scramble,1,Alec Barancyk,x,,$40 
+InterFlight Scramble,2,Dave Franklin,x,,$40 
+InterFlight Scramble,2,Van Huffine,,x,$0 
+InterFlight Scramble,2,Kevin Sullivan,x,,$40 
+InterFlight Scramble,2,Dan Darlson,x,,$40 
+InterFlight Scramble,3,Bret Bologna,x,,$40 
+InterFlight Scramble,3,Ricky Carraher,x,,$40 
+InterFlight Scramble,3,Chris Martin,,x,$0 
+InterFlight Scramble,3,Ruben Hernandez,,x,$0 
+InterFlight Scramble,4,Ron Carraher,x,,$40 
+InterFlight Scramble,4,Steve Lieberman,,x,$0 
+InterFlight Scramble,4,Eric Newell,,x,$0 
+InterFlight Scramble,4,Mike Barancyk,,x,$0 
 White Singles,1,Ricky Carraher,,,$40 
 White Singles,2,Bret Bologna,,,$40 
 White Singles,3,Ron Carraher,,,$40 
@@ -127,3 +127,41 @@ InterFlight,,Ruben Hernandez,,,$100
 InterFlight,,Hunter Carmichael,,,$100 
 InterFlight,,Eric Newell,,,$100 
 InterFlight,,Kevin Sullivan,,,$100 
+White Skins Day 1,,Dan Sherman,x,,$25 
+White Skins Day 1,,Van Huffine,x,,$25 
+White Skins Day 1,,Sam Carraher,x,, $15.00 
+White Skins Day 1,,Dave Franklin,x,, $10.00 
+Blue Skins Day 1,,Dan Darlson,x,,$25 
+Blue Skins Day 1,,Chris Martin,x,, $25.00 
+Blue Skins Day 1,,Alec Barancyk,x,,$15 
+Blue Skins Day 1,,Mike Barancyk,x,,$10 
+Blue Skins Day 2,,Dan Darlson,x,,$10 
+Blue Skins Day 2,,Chris Martin,x,,$10 
+Blue Skins Day 2,,Alec Barancyk,x,,$10 
+Blue Skins Day 2,,Mike Barancyk,x,,$10 
+Blue Skins Day 2,,Ruben Hernandez,x,,$10 
+Blue Skins Day 2,,Hunter Carmichael,x,,$10 
+Blue Skins Day 2,,Eric Newell,x,,$10 
+Blue Skins Day 2,,Kevin Sullivan,x,,$10 
+White Skins Day 2,,Ron Carraher,x,,$7 
+White Skins Day 2,,Bret Bologna,x,,$8 
+White Skins Day 2,,Sam Carraher,x,,$25 
+White Skins Day 2,,Van Huffine,x,,$25 
+White Skins Day 2,,Dan Sherman,x,,$8 
+White Skins Day 2,,Dave Franklin,x,,$7 
+Interflight Skins Day 2,,Bret Bologna,x,,$10 
+Interflight Skins Day 2,,Ricky Carraher,x,,$10 
+Interflight Skins Day 2,,Dan Sherman,x,,$20 
+Interflight Skins Day 2,,Sam Carraher,x,,$20 
+Interflight Skins Day 2,,Dave Franklin,x,,$10 
+Interflight Skins Day 2,,Ron Carraher,x,,$20 
+Interflight Skins Day 2,,Hunter Carmichael,x,,$20 
+Interflight Skins Day 2,,Alec Barancyk,x,,$20 
+Interflight Skins Day 2,,Eric Newell,x,,$10 
+Interflight Skins Day 2,,Mike Barancyk,x,,$10 
+Interflight Skins Day 1,,Sam Carraher,x,,$35 
+Interflight Skins Day 1,,Bret Bologna,x,,$35 
+Interflight Skins Day 1,,Chris Martin,x,,$20 
+Interflight Skins Day 1,,Mike Barancyk,x,,$20 
+Interflight Skins Day 1,,Ricky Carraher,x,,$20 
+Interflight Skins Day 1,,Dave Franklin,x,,$20 
